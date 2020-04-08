@@ -1,3 +1,11 @@
+html,
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   padding: 1em;
   background: tomato;
@@ -13,6 +21,36 @@ body {
 }
 .container nav a {
   text-decoration: none;
+}
+
+.transform {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  -ms-transform: rotate(20deg) scale(1.5);
+  -webkit-transform: rotate(20deg) scale(1.5);
+  transform: rotate(20deg) scale(1.5);
+  font-size: 3em;
+}
+
+.transform2 {
+  width: 300px;
+  height: 400px;
+  background-color: yellow;
+  -ms-transform: rotate(20deg) scale(1.5);
+  -webkit-transform: rotate(20deg) scale(1.5);
+  transform: rotate(20deg) scale(1.5);
+}
+
+.border1, .border {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+  font-size: 1em;
+}
+
+.border1 {
+  margin: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

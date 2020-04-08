@@ -1,3 +1,8 @@
+// Partials
+// Partial files are named in the format: _filename. 
+// They are used with import directives
+@import "partial";
+
 // Variables
 
 $primary-color: tomato;
@@ -28,5 +33,51 @@ body{
 }
 
 
-// Partials
+// Mixins
 
+// Functions that can be used to make css declarations
+// that can be used across the site
+
+// Call mixin directly and name of mixin
+
+@mixin transform_me($prop1, $prop2) {
+    width: $prop1;
+    height: $prop2;
+    background-color: yellow;
+    -ms-transform: rotate(20deg) scale(1.5);
+    -webkit-transform: rotate(20deg) scale(1.5);
+    transform: rotate(20deg) scale(1.5);
+}
+
+.transform {
+    @include transform_me(150px, 80px);
+    font-size: 3em;
+}
+
+// Calling the mixin with different values,
+// setting it to a new css class
+
+.transform2 {
+    @include transform_me(300px, 400px);
+}
+
+
+// Extend
+//  % is extend's reminder operator, which is called when
+// initializing extend
+
+%extend-border {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+    font-size: 1em;
+}
+
+.border {
+    @extend %extend-border;
+}
+
+.border1 {
+    @extend %extend-border;
+    margin: 20px;
+}
