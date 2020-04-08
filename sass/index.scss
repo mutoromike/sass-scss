@@ -81,3 +81,16 @@ body{
     @extend %extend-border;
     margin: 20px;
 }
+
+
+// Pseudo Selector
+
+.element {
+    a {
+        color: black;
+    text-decoration: none;
+    &:hover { // This selects a sub-element, in this case; Hover
+        color: greenyellow;
+    }
+    }
+}
