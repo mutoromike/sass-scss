@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mutoromike/sass-scss/issues"
   },
-  "homepage": "https://github.com/mutoromike/sass-scss#readme"
+  "homepage": "https://github.com/mutoromike/sass-scss#readme",
+  "devDependencies": {
+    "sass": "^1.26.3"
+  }
 }
